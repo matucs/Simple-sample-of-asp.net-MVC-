@@ -1,0 +1,15 @@
+﻿
+<h2>This Is a Test</h2>
+<div class="user">
+    <h1>Enter Username or UserID</h1>
+    @using (@Html.BeginForm("SendMail", "EMail", FormMethod.Get))
+    {
+        <p>Id</p>
+        @Html.TextBox("id");
+        <p>username</p>
+        @Html.TextBox("username");
+        <input type="submit" value="submit" />
+        <p class="result" style="font-size:24px;color:green">@ViewData["wellcome"]</p>
+    }
+
+</div>
